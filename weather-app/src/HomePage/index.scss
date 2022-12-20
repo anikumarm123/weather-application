@@ -1,0 +1,104 @@
+@import "../variables/variables.scss";
+
+.view-weather-table {
+  width: 65%;
+  height: 500px;
+  font-family: $fontFamily;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .view-weather-details{
+    display: flex;
+    width: 500px;
+    height: 150px;
+    background-color: $backgroundColor;
+    border-radius: 20px;
+    align-items: center;
+    color: $whiteColor;
+    .weather-deg{
+      width: 150px;
+      text-align: center;
+          h1{
+            font-size: 70px;
+            margin: 0px;
+          }
+          
+    }
+    .weather-location{
+      width: 300px;
+      h3{
+        margin: 0px;
+        font-size: 30px;
+      }
+      i{
+        font-size: 30px;
+        color: rgb(255, 255, 112);
+      }
+      span{
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.weather-main-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: $backgroundColor;
+  width: 35%;
+  padding: 0px 0px 0px 30px;
+  font-family:$fontFamily;
+  .search-location {
+    display: flex;
+    height: 60px;
+    width: 85%;
+    border-radius: 25px;
+    background-color:$backgroundColor;
+    input {
+      width: 70%;
+      background: unset;
+      outline: none;
+      font-size: 18px;
+      color: $whiteColor;
+      border: none;
+      padding: 0px 0px 0px 20px;
+      cursor: pointer;
+    }
+    ::placeholder {
+      color: $whiteColor;
+    }
+    button {
+      width: 25%;
+      font-size: 18px;
+      color: $whiteColor;
+      border: none;
+      border-radius:0px  25px 0px 25px;
+      background-color: #feca9a;
+    }
+  }
+  .weather-details {
+    thead {
+      font-size: 20px;
+      color:$whiteColor;
+    }
+    tr {
+      color:$whiteColor;
+      height: 50px;
+    }
+  }
+  div{
+    font-family: 'Cormorant Garamond', serif;
+    color: $whiteColor;
+
+    h4{
+      margin: 0px;
+      line-height: 30px;
+      font-size: 25px;
+    }
+    span{
+      font-size: 20px;
+      padding: 0px 0px 0px 50px;
+    }
+  }
+}
